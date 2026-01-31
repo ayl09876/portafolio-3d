@@ -1,0 +1,44 @@
+/* RESET MÍNIMO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE DEL DOCUMENTO */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* SECCIONES */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 60vh;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
