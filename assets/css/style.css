@@ -8,8 +8,32 @@
 /* BASE DEL DOCUMENTO */
 body {
   font-family: system-ui, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
+  color: #111;
+}
+
+/*Titulo*/
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+
+/*Texto*/
+p {
+  max-width: 65ch;
 }
 
 /* HEADER */
