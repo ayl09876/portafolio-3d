@@ -3,44 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portafolio de Alejandro Yavico</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Portafolio de Alejandro</title>
   </head>
+
   <body>
+    <!-- HEADER = identidad + navegación -->
     <header>
       <h1>Alejandro Yavico</h1>
-
       <p>Desarrollador Web</p>
 
-      <nav>
+      <nav aria-label="Navegación principal">
         <a href="#sobre-mi" class="nav-link">Sobre mí</a>
         <a href="#habilidades" class="nav-link">Habilidades</a>
         <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
     </header>
+
+    <!-- MAIN = contenido único del sitio -->
     <main>
-      <section>
-        <h2>Sobre mi</h2>
-        <p>Breve presentacion profesional.</p>
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+
+        <p class="fade-in">
+          Soy desarrollador web enfocado en crear experiencias digitales
+          funcionales, claras y con identidad visual. Me interesa el frontend
+          avanzado, las animaciones y la construcción de interfaces que se
+          sientan vivas.
+        </p>
       </section>
-      <section>
-        <h2>habilidades</h2>
-        <p>Listado de tegnologia.</p>
+
+      <!-- HABILIDADES -->
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+
+        <p class="fade-in">
+          Trabajo con tecnologías modernas del ecosistema web, cuidando tanto la
+          estructura como la experiencia del usuario.
+        </p>
       </section>
-      <section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="projects">
         <h2>Proyectos</h2>
-        <p>Seleccion de trabajos.</p>
-        <p class="fade-in">Este texto aparece suavemente.</p>
+
+        <div class="card-wrapper fade-in">
+          <article class="card">
+            <h3>Proyecto Destacado</h3>
+            <p>
+              Interfaz interactiva con animaciones 3D, microinteracciones y foco
+              en rendimiento y claridad visual.
+            </p>
+          </article>
+        </div>
       </section>
-      <section>
+
+      <!-- CONTACTO -->
+      <section id="contacto">
         <h2>Contacto</h2>
+
+        <p class="fade-in">
+          ¿Tienes una idea, un proyecto o simplemente quieres hablar?
+        </p>
 
         <button id="btn-contacto">Tómate un café conmigo ☕</button>
       </section>
     </main>
+
+    <!-- FOOTER = cierre legal/informativo -->
     <footer>
       <p>© 2026 – Alejandro Yavico</p>
     </footer>
+
+    <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

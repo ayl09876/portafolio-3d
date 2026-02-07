@@ -1,10 +1,30 @@
+// Botón de contacto
 const boton = document.getElementById("btn-contacto");
-const texto = document.querySelector(".fade-in");
 
-window.addEventListener("load", () => {
-  texto.classList.add("visible");
-});
+// Fade-in elements
+const fadeElements = document.querySelectorAll(".fade-in");
 
-boton.addEventListener("click", () => {
-  alert("Gracias por querer contactarme ☕");
-});
+// Seguridad: evitar errores si no existen
+if (fadeElements.length > 0) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // solo una vez
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    },
+  );
+
+  fadeElements.forEach((el) => observer.observe(el));
+}
+
+if (boton) {
+  boton.addEventListener("click", () => {
+    alert("Gracias por querer contactarme ☕");
+  });
+}
